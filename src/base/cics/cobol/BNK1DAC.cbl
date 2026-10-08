@@ -685,7 +685,8 @@
            MOVE COMM-NEXT-ST-MM           TO NSTMTMMO.
            MOVE COMM-NEXT-ST-YY           TO NSTMTYYO.
 
-           MOVE INQACC-AVAIL-BAL      TO AVAILABLE-BALANCE-DISPLAY.
+           COMPUTE AVAILABLE-BALANCE-DISPLAY =
+              INQACC-AVAIL-BAL * 10.
            MOVE INQACC-ACTUAL-BAL     TO ACTual-balance-display.
            MOVE available-balance-display TO AVBALO
            MOVE actual-balance-display    TO ACTBALO

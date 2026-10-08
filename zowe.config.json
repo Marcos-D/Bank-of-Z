@@ -27,7 +27,8 @@
                     "type": "rse",
                     "properties": {
                         "port": 8195,
-                        "basePath": "rseapi"
+                        "basePath": "rseapi",
+                        "host": "9.47.80.84"
                     }
                 },
                 "cics": {
@@ -49,6 +50,12 @@
                     }
                 }
             }
+        },
+        "global_base": {
+            "properties": {},
+            "secure": [
+                "user"
+            ]
         }
     },
     "defaults": {
