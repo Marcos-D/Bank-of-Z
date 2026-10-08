@@ -102,7 +102,7 @@ app:
 # Sandbox root directory (USS)
 sandbox:
   root: "{{ global.sandbox_root }}"
-  path: "{{ sandbox.root }}/bank-of-z"
+  path: "/u/user15/sandbox/bank-of-z"
 
 # Zowe CLI configuration
 zowe:
