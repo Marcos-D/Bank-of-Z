@@ -379,6 +379,14 @@
               MOVE HV-CUSTOMER-COUNTRY TO CUSTOMER-COUNTRY
                  OF CUSTOMER-ADDRESS
               MOVE HV-CUSTOMER-STATUS TO CUSTOMER-STATUS
+              EVALUATE CUSTOMER-STATUS
+                 WHEN 'A'
+                    MOVE 'ACTIVE'    TO CUSTOMER-STATUS
+                 WHEN 'I'
+                    MOVE 'INACTIVE'  TO CUSTOMER-STATUS
+                 WHEN 'S'
+                    MOVE 'SUSPENDED' TO CUSTOMER-STATUS
+              END-EVALUATE
               COMPUTE CUSTOMER-CREATED-YEAR =
                  HV-CUSTOMER-CREATE-DATE / 10000
               COMPUTE CUSTOMER-CREATED-MONTH =
